@@ -7,8 +7,8 @@
 <body>
 <?php
 	if(isset($_POST['cantidadkg']) && isset($_POST['producto'])){
-		$cantidadkg = $_POST['cantidadkg'];
-		$producto = $_POST['producto'];
+		$cantidadkg = $_GET['cantidadkg'];
+		$producto = $_GET['producto'];
 		if($producto=="Naranja" || $producto=="naranja"){
 			$iva = 0.1;
 			$valorproducto = 2*$cantidadkg;
