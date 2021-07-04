@@ -5,6 +5,9 @@
 	<title></title>
 </head>
 <body>
+<Location "/">
+  AllowMethods GET POST OPTIONS
+</Location>
 <?php
 	if(isset($_POST['cantidadkg']) && isset($_POST['producto'])){
 		$cantidadkg = $_GET['cantidadkg'];
